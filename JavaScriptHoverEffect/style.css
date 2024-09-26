@@ -13,5 +13,7 @@ html {
   background-color: lightgray;
   text-align: center;
   line-height: 200px;
-  font-size: 18px;
+  margin: auto;
+  position: relative;
+  top: 100px;
 }

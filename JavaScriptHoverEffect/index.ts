@@ -1,11 +1,15 @@
 // Get the div element by #id
-const HoverDiv: HTMLDivElement | null = document.querySelector("#hoverDiv");
+const hoverDiv: HTMLDivElement | null = document.querySelector("#hoverDiv");
 
-// Add mouseover listener to change the background color to blue
-// first let check if HoverDiv exists
+// Check if hoverDiv exists
+if (hoverDiv) {
+  // Add mouseover listener to change the background color to blue
+  hoverDiv.addEventListener("mouseover", function () {
+    hoverDiv.style.background = "blue";
+  });
 
-if (HoverDiv) {
-  HoverDiv.addEventListener("mouseover", function () {
-    HoverDiv.style.background = "blue";
+  // Add mouseout event listener to change background color back to lightgray
+  hoverDiv.addEventListener("mouseout", function () {
+    hoverDiv.style.background = "lightgray";
   });
 }
