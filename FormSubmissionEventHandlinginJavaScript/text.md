@@ -1,0 +1,1 @@
+Write a function that adds an event listener to a form's submit button. When the form is submitted, use event.preventDefault() to prevent the page from refreshing and log "Form submitted" to the console instead.
