@@ -1,5 +1,6 @@
+"use strict";
 // Get my div element
-var myDiv = document.querySelector("#myDiv");
+const myDiv = document.querySelector("#myDiv");
 console.log(myDiv);
 // let create the shortcut function
 function shortCut(e) {
