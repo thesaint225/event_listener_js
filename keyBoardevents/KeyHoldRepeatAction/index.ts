@@ -14,7 +14,7 @@ function handleKeyDown(e: KeyboardEvent) {
   if (actionInterval === null && e.key === "a") {
     startAction();
 
-    // Repeat action every 500 millseconds
+    // Repeat action every 500 milliseconds
     actionInterval = window.setInterval(() => {
       console.log("Repeating  action ");
     }, 500);
