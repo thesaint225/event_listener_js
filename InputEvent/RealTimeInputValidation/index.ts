@@ -13,7 +13,7 @@ function validInput() {
   // regular expression to allow number only
   const isValidNumber = /^[0-9]*$/.test(value);
 
-  // clear invalid input if non-numeric charcters are typed
+  // clear invalid input if non-numeric characters are typed
   numberInput.value = value.replace(/[^0-9]/g, "");
 
   // toggle error message based on validity
