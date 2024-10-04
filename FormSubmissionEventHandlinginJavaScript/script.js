@@ -1,5 +1,6 @@
-var form = document.querySelector("#myForm");
-var input = document.querySelector("#name");
+"use strict";
+const form = document.querySelector("#myForm");
+const input = document.querySelector("#name");
 // Function to add event listener to form
 function handleFormSubmit(e) {
     e.preventDefault();
