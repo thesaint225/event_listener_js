@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Fields</title>
+</head>
+
+<body>
+    <h1>Dynamic Form Fields Example</h1>
+    <form id="dynamicForm">
+        <div id="inputContainer">
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phone[]" id="phone" required>
+        </div>
+        <button type="button" id="addPhone">Add Another Phone Number</button>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
