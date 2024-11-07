@@ -12,7 +12,7 @@ const showMap = (latitude: number, longitude: number) => {
   mapIframeElement.style.display = "block";
 };
 
-const handleSuccess = (position: GeolocationPosition) => {
+const onSuccess = (position: GeolocationPosition) => {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
 
@@ -45,7 +45,7 @@ const handleError = (error: GeolocationPositionError) => {
 };
 
 if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(handleSuccess, handleError);
+  navigator.geolocation.getCurrentPosition(onSuccess, handleError);
 } else {
   errorElement.textContent = "Geolocation is not supported by your browser.";
 }
