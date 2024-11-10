@@ -1,0 +1,1 @@
+Given a User type, create a new type PublicProfile that excludes sensitive fields like password. Then, create a function displayProfile that takes a PublicProfile object and logs the profile details without the password.
